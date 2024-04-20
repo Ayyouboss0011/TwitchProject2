@@ -1,0 +1,71 @@
+version: "3"
+
+services:
+  vpn16:
+    image: qmcgaw/gluetun
+    container_name: vpn16
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=windscribe
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=4JZYd2ElHU6lHI8BQ/kdDAAQzYGiL1JAX7qcsOLrrFM=
+      - WIREGUARD_ADDRESSES=100.95.37.94/32
+      - WIREGUARD_PRESHARED_KEY=m7pGiKXWGmJmopkBsfVZZRu/DlE8lsqc1S2M8DnaAfw=
+      - SERVER_REGIONS=US East
+    ports:
+      - 5916:5900
+
+  vpn17:
+    image: qmcgaw/gluetun
+    container_name: vpn17
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=windscribe
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=4JZYd2ElHU6lHI8BQ/kdDAAQzYGiL1JAX7qcsOLrrFM=
+      - WIREGUARD_ADDRESSES=100.95.37.94/32
+      - WIREGUARD_PRESHARED_KEY=m7pGiKXWGmJmopkBsfVZZRu/DlE8lsqc1S2M8DnaAfw=
+      - SERVER_REGIONS=US East
+    ports:
+      - 5917:5900
+
+  vpn18:
+    image: qmcgaw/gluetun
+    container_name: vpn18
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=windscribe
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=4JZYd2ElHU6lHI8BQ/kdDAAQzYGiL1JAX7qcsOLrrFM=
+      - WIREGUARD_ADDRESSES=100.95.37.94/32
+      - WIREGUARD_PRESHARED_KEY=m7pGiKXWGmJmopkBsfVZZRu/DlE8lsqc1S2M8DnaAfw=
+      - SERVER_REGIONS=US East
+    ports:
+      - 5918:5900
+
+  b16:
+    image: ayyouboss0011/chrome700x700
+    container_name: b16
+    network_mode: service:vpn16
+    restart: always
+    depends_on:
+      - vpn16
+
+  b17:
+    image: ayyouboss0011/chrome700x700
+    container_name: b17
+    network_mode: service:vpn17
+    restart: always
+    depends_on:
+      - vpn17
+
+  b18:
+    image: ayyouboss0011/chrome700x700
+    container_name: b18
+    network_mode: service:vpn18
+    restart: always
+    depends_on:
+      - vpn18

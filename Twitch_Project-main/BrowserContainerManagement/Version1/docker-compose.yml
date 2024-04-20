@@ -1,0 +1,953 @@
+version: "3"
+
+services:
+  vpn1:
+    image: qmcgaw/gluetun
+    container_name: vpn1
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6901:6901"
+
+  vpn2:
+    image: qmcgaw/gluetun
+    container_name: vpn2
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6902:6901"
+
+  vpn3:
+    image: qmcgaw/gluetun
+    container_name: vpn3
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6903:6901"
+  
+  vpn4:
+    image: qmcgaw/gluetun
+    container_name: vpn4
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6904:6901"
+
+  vpn5:
+    image: qmcgaw/gluetun
+    container_name: vpn5
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6905:6901"
+
+  vpn6:
+    image: qmcgaw/gluetun
+    container_name: vpn6
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6906:6901"
+
+  vpn7:
+    image: qmcgaw/gluetun
+    container_name: vpn7
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6907:6901"
+
+  vpn8:
+    image: qmcgaw/gluetun
+    container_name: vpn8
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6908:6901"
+
+  vpn9:
+    image: qmcgaw/gluetun
+    container_name: vpn9
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6909:6901"
+
+  vpn10:
+    image: qmcgaw/gluetun
+    container_name: vpn10
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6910:6901"
+
+  vpn11:
+    image: qmcgaw/gluetun
+    container_name: vpn11
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6911:6901"
+
+  vpn12:
+    image: qmcgaw/gluetun
+    container_name: vpn12
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6912:6901"
+
+  vpn13:
+    image: qmcgaw/gluetun
+    container_name: vpn13
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6913:6901"
+  
+  vpn14:
+    image: qmcgaw/gluetun
+    container_name: vpn14
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6914:6901"
+
+  vpn15:
+    image: qmcgaw/gluetun
+    container_name: vpn15
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6915:6901"
+
+  vpn16:
+    image: qmcgaw/gluetun
+    container_name: vpn16
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6916:6901"
+
+  vpn17:
+    image: qmcgaw/gluetun
+    container_name: vpn17
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6917:6901"
+
+  vpn18:
+    image: qmcgaw/gluetun
+    container_name: vpn18
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6918:6901"
+
+  vpn19:
+    image: qmcgaw/gluetun
+    container_name: vpn19
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6919:6901"
+
+  vpn20:
+    image: qmcgaw/gluetun
+    container_name: vpn20
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6920:6901"
+
+  vpn21:
+    image: qmcgaw/gluetun
+    container_name: vpn21
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6921:6901"
+
+  vpn22:
+    image: qmcgaw/gluetun
+    container_name: vpn22
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6922:6901"
+
+  vpn23:
+    image: qmcgaw/gluetun
+    container_name: vpn23
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6923:6901"
+  
+  vpn24:
+    image: qmcgaw/gluetun
+    container_name: vpn24
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6924:6901"
+
+  vpn25:
+    image: qmcgaw/gluetun
+    container_name: vpn25
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6925:6901"
+
+  vpn26:
+    image: qmcgaw/gluetun
+    container_name: vpn26
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6926:6901"
+
+  vpn27:
+    image: qmcgaw/gluetun
+    container_name: vpn27
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6927:6901"
+
+  vpn28:
+    image: qmcgaw/gluetun
+    container_name: vpn28
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6928:6901"
+
+  vpn29:
+    image: qmcgaw/gluetun
+    container_name: vpn29
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6929:6901"
+
+  vpn30:
+    image: qmcgaw/gluetun
+    container_name: vpn30
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6930:6901"
+
+  vpn31:
+    image: qmcgaw/gluetun
+    container_name: vpn31
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6931:6901"
+
+  vpn32:
+    image: qmcgaw/gluetun
+    container_name: vpn32
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6932:6901"
+
+  vpn33:
+    image: qmcgaw/gluetun
+    container_name: vpn33
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6933:6901"
+  
+  vpn34:
+    image: qmcgaw/gluetun
+    container_name: vpn34
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6934:6901"
+
+  vpn35:
+    image: qmcgaw/gluetun
+    container_name: vpn35
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6935:6901"
+
+  vpn36:
+    image: qmcgaw/gluetun
+    container_name: vpn36
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6936:6901"
+
+  vpn37:
+    image: qmcgaw/gluetun
+    container_name: vpn37
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6937:6901"
+
+  vpn38:
+    image: qmcgaw/gluetun
+    container_name: vpn38
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6938:6901"
+
+  vpn39:
+    image: qmcgaw/gluetun
+    container_name: vpn39
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6939:6901"
+
+  vpn40:
+    image: qmcgaw/gluetun
+    container_name: vpn40
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.2/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "6940:6901"
+
+  b1:
+    image: firefox:firefox
+    container_name: b1
+    network_mode: service:vpn1
+    restart: always
+    depends_on:
+      - vpn1
+  
+
+
+  b2:
+    image: firefox:firefox
+    container_name: b2
+    network_mode: service:vpn2
+    restart: always
+    depends_on:
+      - vpn2
+
+
+
+  b3:
+    image: firefox:firefox
+    container_name: b3
+    network_mode: service:vpn3
+    restart: always
+    depends_on:
+      - vpn3
+
+
+
+  b4:
+    image: firefox:firefox
+    container_name: b4
+    network_mode: service:vpn4
+    restart: always
+    depends_on:
+      - vpn4
+
+
+
+  b5:
+    image: firefox:firefox
+    container_name: b5
+    network_mode: service:vpn5
+    restart: always
+    depends_on:
+      - vpn5
+
+
+
+  b6:
+    image: firefox:firefox
+    container_name: b6
+    network_mode: service:vpn6
+    restart: always
+    depends_on:
+      - vpn6
+  
+
+
+  b7:
+    image: firefox:firefox
+    container_name: b7
+    network_mode: service:vpn7
+    restart: always
+    depends_on:
+      - vpn7
+
+
+
+  b8:
+    image: firefox:firefox
+    container_name: b8
+    network_mode: service:vpn8
+    restart: always
+    depends_on:
+      - vpn8
+
+
+
+  b9:
+    image: firefox:firefox
+    container_name: b9
+    network_mode: service:vpn9
+    restart: always
+    depends_on:
+      - vpn9
+
+
+
+  b10:
+    image: firefox:firefox
+    container_name: b10
+    network_mode: service:vpn10
+    restart: always
+    depends_on:
+      - vpn10
+      
+  b11:
+    image: firefox:firefox
+    container_name: b11
+    network_mode: service:vpn11
+    restart: always
+    depends_on:
+      - vpn11
+  
+
+
+  b12:
+    image: firefox:firefox
+    container_name: b12
+    network_mode: service:vpn12
+    restart: always
+    depends_on:
+      - vpn12
+
+
+
+  b13:
+    image: firefox:firefox
+    container_name: b13
+    network_mode: service:vpn13
+    restart: always
+    depends_on:
+      - vpn13
+
+
+
+  b14:
+    image: firefox:firefox
+    container_name: b14
+    network_mode: service:vpn14
+    restart: always
+    depends_on:
+      - vpn14
+
+
+
+  b15:
+    image: firefox:firefox
+    container_name: b15
+    network_mode: service:vpn15
+    restart: always
+    depends_on:
+      - vpn15
+
+
+
+  b16:
+    image: firefox:firefox
+    container_name: b16
+    network_mode: service:vpn16
+    restart: always
+    depends_on:
+      - vpn16
+  
+
+
+  b17:
+    image: firefox:firefox
+    container_name: b17
+    network_mode: service:vpn17
+    restart: always
+    depends_on:
+      - vpn17
+
+
+
+  b18:
+    image: firefox:firefox
+    container_name: b18
+    network_mode: service:vpn18
+    restart: always
+    depends_on:
+      - vpn18
+
+
+
+  b19:
+    image: firefox:firefox
+    container_name: b19
+    network_mode: service:vpn19
+    restart: always
+    depends_on:
+      - vpn19
+
+
+
+  b20:
+    image: firefox:firefox
+    container_name: b20
+    network_mode: service:vpn20
+    restart: always
+    depends_on:
+      - vpn20
+
+  b21:
+    image: firefox:firefox
+    container_name: b21
+    network_mode: service:vpn21
+    restart: always
+    depends_on:
+      - vpn21
+  
+
+
+  b22:
+    image: firefox:firefox
+    container_name: b22
+    network_mode: service:vpn22
+    restart: always
+    depends_on:
+      - vpn22
+
+
+
+  b23:
+    image: firefox:firefox
+    container_name: b23
+    network_mode: service:vpn23
+    restart: always
+    depends_on:
+      - vpn23
+
+
+
+  b24:
+    image: firefox:firefox
+    container_name: b24
+    network_mode: service:vpn24
+    restart: always
+    depends_on:
+      - vpn24
+
+
+
+  b25:
+    image: firefox:firefox
+    container_name: b25
+    network_mode: service:vpn25
+    depends_on:
+      - vpn25
+
+
+
+  b26:
+    image: firefox:firefox
+    container_name: b26
+    network_mode: service:vpn26
+    restart: always
+    depends_on:
+      - vpn26
+  
+
+
+  b27:
+    image: firefox:firefox
+    container_name: b27
+    network_mode: service:vpn27
+    restart: always
+    depends_on:
+      - vpn27
+
+
+
+  b28:
+    image: firefox:firefox
+    container_name: b28
+    network_mode: service:vpn28
+    restart: always
+    depends_on:
+      - vpn28
+
+
+
+  b29:
+    image: firefox:firefox
+    container_name: b29
+    network_mode: service:vpn29
+    restart: always
+    depends_on:
+      - vpn29
+
+
+
+  b30:
+    image: firefox:firefox
+    container_name: b30
+    network_mode: service:vpn30
+    restart: always
+    depends_on:
+      - vpn30
+      
+  b31:
+    image: firefox:firefox
+    container_name: b31
+    network_mode: service:vpn31
+    restart: always
+    depends_on:
+      - vpn31
+  
+
+
+  b32:
+    image: firefox:firefox
+    container_name: b32
+    network_mode: service:vpn32
+    restart: always
+    depends_on:
+      - vpn32
+
+
+
+  b33:
+    image: firefox:firefox
+    container_name: b33
+    network_mode: service:vpn33
+    restart: always
+    depends_on:
+      - vpn33
+
+
+
+  b34:
+    image: firefox:firefox
+    container_name: b34
+    network_mode: service:vpn34
+    restart: always
+    depends_on:
+      - vpn34
+
+
+
+  b35:
+    image: firefox:firefox
+    container_name: b35
+    network_mode: service:vpn35
+    restart: always
+    depends_on:
+      - vpn35
+
+
+
+  b36:
+    image: firefox:firefox
+    container_name: b36
+    network_mode: service:vpn36
+    restart: always
+    depends_on:
+      - vpn36
+  
+
+
+  b37:
+    image: firefox:firefox
+    container_name: b37
+    network_mode: service:vpn37
+    restart: always
+    depends_on:
+      - vpn37
+
+
+
+  b38:
+    image: firefox:firefox
+    container_name: b38
+    network_mode: service:vpn38
+    restart: always
+    depends_on:
+      - vpn38
+
+
+
+  b39:
+    image: firefox:firefox
+    container_name: b39
+    network_mode: service:vpn39
+    restart: always
+    depends_on:
+      - vpn39
+
+
+
+  b40:
+    image: firefox:firefox
+    container_name: b40
+    network_mode: service:vpn40
+    restart: always
+    depends_on:
+      - vpn40

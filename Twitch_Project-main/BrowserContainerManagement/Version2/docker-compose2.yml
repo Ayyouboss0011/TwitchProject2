@@ -1,0 +1,69 @@
+version: "3"
+
+services:
+  vpn4:
+    image: qmcgaw/gluetun
+    container_name: vpn4
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.4/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "5904:5900"
+
+  vpn5:
+    image: qmcgaw/gluetun
+    container_name: vpn5
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.5/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "5905:5900"
+
+  vpn6:
+    image: qmcgaw/gluetun
+    container_name: vpn6
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=surfshark
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=+MXVbzRDJmO8VUere5Xtm1Xbf7bpjsl8+sfD3AiLjkI=
+      - WIREGUARD_ADDRESSES=10.14.0.6/16
+      - SERVER_COUNTRIES=United States
+    ports:
+      - "5906:5900"
+
+  b4:
+    image: ayyouboss0011/chrome
+    container_name: b4
+    network_mode: service:vpn4
+    restart: always
+    depends_on:
+      - vpn4
+
+  b5:
+    image: ayyouboss0011/chrome
+    container_name: b5
+    network_mode: service:vpn5
+    restart: always
+    depends_on:
+      - vpn5
+
+  b6:
+    image: ayyouboss0011/chrome
+    container_name: b6
+    network_mode: service:vpn6
+    restart: always
+    depends_on:
+      - vpn6
+
