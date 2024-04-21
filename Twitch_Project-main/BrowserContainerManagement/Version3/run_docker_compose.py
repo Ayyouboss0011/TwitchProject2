@@ -276,17 +276,6 @@ def run_docker_compose():
     except subprocess.CalledProcessError as e:
         print(f"Error: {e}")
 
-    time.sleep(10)
-
-    try:
-        # Define the command
-        command = ["docker-compose", "-f", "docker-compose24.yml", "up", "-d"]
-
-        # Run the command
-        subprocess.run(command, check=True)
-        print("Docker Compose command executed successfully.")
-    except subprocess.CalledProcessError as e:
-        print(f"Error: {e}")
     ###########################################################################################################
     
     
