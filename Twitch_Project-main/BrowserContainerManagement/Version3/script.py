@@ -28,24 +28,21 @@ print(result.stdout)
 run_docker_compose()
 
 while True:
-    for i in range(1, 6):
-        container_ids = subprocess.check_output(['docker', 'ps', '-q'], text=True).split()
-        command_to_execute = 'pkill -f chrome'
+    container_ids = subprocess.check_output(['docker', 'ps', '-q'], text=True).split()
+    command_to_execute = 'pkill -f chrome'
 
-        def restart_chrome_container(container_id, command):
-            try:
-                subprocess.run(['docker', 'exec', container_id, *command.split()], check=True)
-                print(f"Command executed successfully in container {container_id}")
-                
-            except subprocess.CalledProcessError as e:
-                print(f"Error executing command in container {container_id}: {e}")
-
-        for container_id in container_ids:
-            restart_chrome_container(container_id, command_to_execute)
-            time.sleep(15)
+    def restart_chrome_container(container_id, command):
+        try:
+            subprocess.run(['docker', 'exec', container_id, *command.split()], check=True)
+            print(f"Command executed successfully in container {container_id}")
             
-    restartVPNxBrowser()
-    
+        except subprocess.CalledProcessError as e:
+            print(f"Error executing command in container {container_id}: {e}")
+
+    for container_id in container_ids:
+        restart_chrome_container(container_id, command_to_execute)
+        time.sleep(15)
+
     
         
 
